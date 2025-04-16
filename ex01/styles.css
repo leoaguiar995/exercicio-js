@@ -18,6 +18,28 @@ section{
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.226);
 }
 
+div#message{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px 2px 2px 2px;
+    font-size: 30pt;
+}
+
+
+div#foto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
+#foto img{
+    width:auto;
+    border-radius: 50%;
+    box-shadow: 2px 2px 14px rgba(0, 0, 0, 0.185);
+}
+
 footer{
     color:whitesmoke;
     text-align: center;
