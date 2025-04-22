@@ -1,19 +1,34 @@
 document.getElementById('btn').addEventListener('click', verificar)
 
+
+
+function calcularIdade(dataNascimento){
+    const hoje = new Date()
+    let idade = hoje.getFullYear() - dataNascimento.getFullYear()
+    const mes = hoje.getMonth() - dataNascimento.getMonth()
+
+    if(mes < 0 || (mes === 0 && hoje.getDate() < dataNascimento.getDate())){
+        idade--
+    }
+    return idade
+
+
+}
 function verificar(){
 
-    var data = new Date()
-    var ano = data.getFullYear()
-    var fano = document.getElementById('txtano')
+    var fdata = document.getElementById('txtdata')
     var res = document.getElementById('res')
     var img = document.createElement('img')
     img.setAttribute('id', 'foto')
 
-    if(fano.value.length == 0 || fano.value > ano){
-        window.alert('Erro = Ano invalido')
+    if(!fdata.value){
+        window.alert('Erro = Data Invalida')
+        return
     }else{
+
+        const dataNascimento = new Date(fdata.value)
+        const idade = calcularIdade(dataNascimento)
         var fsex = document.getElementsByName('radsex')
-        var idade = ano - Number(fano.value)
         var genero = ''
         if(fsex[0].checked){
             genero = 'Masculino'
