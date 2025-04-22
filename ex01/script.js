@@ -5,10 +5,11 @@ function carregar(){
     var image = document.getElementById('image')
 
     var data = new Date()
-    var hora = data.getHours()
+    var hora = data.getHours().toString()
+    var minutos = data.getMinutes().toString().padStart(2, '0')
     //var hora = 2
 
-    message.innerHTML = `Agora são ${hora} horas.`
+    message.innerHTML = `Agora são ${hora}:${minutos} horas.`
 
     if(hora >= 0 && hora < 12){
         image.src = './imgs/fotomanha.png'

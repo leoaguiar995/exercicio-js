@@ -1,0 +1,62 @@
+body{
+    background-color: rgb(22, 138, 192);
+    font: normal 15pt Roboto;
+}
+
+header{
+    color: white;
+    text-align: center;
+
+}
+
+
+#res{
+    display:grid;
+    place-items: center;
+    
+}
+
+
+section{
+    background-color: aliceblue;
+    border-radius: 5px;
+    padding: 15px;
+    width: 50%;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.226);
+}
+
+#message{
+    display: grid;
+    place-items: center;
+    margin:10px;
+}
+
+footer{
+    color:whitesmoke;
+    text-align: center;
+    font-size: 10pt;
+    opacity: 50%;
+}
+
+#btn {
+	background-color:#7892c2;
+	border-radius:28px;
+	border:1px solid #4e6096;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Roboto;
+	font-size:17px;
+	padding:16px 40px;
+	text-decoration:none;
+	text-shadow:1px 1px 2px #283966;
+}
+#btn:hover {
+	background-color:#476e9e;
+}
+
+#btn:active {
+	position:relative;
+	top:1px;
+}
