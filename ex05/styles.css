@@ -1,0 +1,64 @@
+body{
+    background-color: rgb(22, 138, 192);
+    font: normal 15pt Roboto;
+}
+
+header{
+    color: white;
+    text-align: center;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    padding: 15px;
+    width: 50%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.226);
+}
+
+input[type="number"]{
+    padding: 10px 15px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+
+input[type="button"] {
+    background-color: #3498db; /* Cor de fundo vibrante */
+    color: white; /* Texto branco */
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 10px;
+    border-color: #2778ad;
+    margin: 10px;
+    cursor: pointer; /* Mostra que é clicável */
+}
+
+footer{
+    color:whitesmoke;
+    text-align: center;
+    font-size: 10pt;
+    opacity: 50%;
+}
+
+select {
+    padding: 10px 15px; /* Maior espaçamento para um visual mais clean */
+    border: 2px solid #ccc; /* Borda fina e neutra */
+    border-radius: 5px; /* Bordas arredondadas para suavizar */
+    background-color: #f7f7f7; /* Fundo claro */
+    width: 100%; /* Ocupa toda a largura disponível */
+    appearance: none; /* Remove a seta padrão do select (para personalizar a seta) */
+    -webkit-appearance: none; /* Remove a seta no Safari */
+    -moz-appearance: none; /* Remove a seta no Firefox */
+    
+    transition: all 0.3s ease; /* Transição suave para interações */
+}

@@ -1,0 +1,26 @@
+body{
+    background-color: rgb(22, 138, 192);
+    font: normal 15pt Roboto;
+}
+
+header{
+    color: white;
+    text-align: center;
+
+}
+
+section{
+    background-color: aliceblue;
+    border-radius: 5px;
+    padding: 15px;
+    width: 50%;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.226);
+}
+
+footer{
+    color:whitesmoke;
+    text-align: center;
+    font-size: 10pt;
+    opacity: 50%;
+}
